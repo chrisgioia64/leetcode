@@ -4,8 +4,8 @@ import java.util.List;
 
 public class ListNode {
 
-    private ListNode next;
-    private int value;
+    public ListNode next;
+    public int value;
 
     public ListNode(ListNode next, int value) {
         this.value = value;
