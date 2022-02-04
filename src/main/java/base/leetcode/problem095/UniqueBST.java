@@ -83,13 +83,13 @@ public class UniqueBST {
         }
     }
 
-    public static void main(String[] args) {
-        UniqueBST bst = new UniqueBST();
-        List<TreeNode> nodes = bst.generateTrees(4);
-        for (TreeNode node : nodes) {
-            printNode(node);
-            System.out.println();
-        }
-//        System.out.println(bst.generateTrees(3));
-    }
+//    public static void main(String[] args) {
+//        UniqueBST bst = new UniqueBST();
+//        List<TreeNode> nodes = bst.generateTrees(4);
+//        for (TreeNode node : nodes) {
+//            printNode(node);
+//            System.out.println();
+//        }
+////        System.out.println(bst.generateTrees(3));
+//    }
 }
