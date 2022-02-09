@@ -25,11 +25,11 @@ public class AddTwoNumbersBaseTest {
         ListNode listNode = ListNode.createFromList(Arrays.asList());
         assertTrue(listNode == null);
         listNode = ListNode.createFromList(Arrays.asList(1));
-        assertEquals(listNode.getValue(), 1);
+        assertEquals(listNode.getVal(), 1);
         assertTrue(listNode.getNext() == null);
         listNode = ListNode.createFromList(Arrays.asList(1, 2));
-        assertEquals(listNode.getValue(), 1);
-        assertEquals(listNode.getNext().getValue(), 2);
+        assertEquals(listNode.getVal(), 1);
+        assertEquals(listNode.getNext().getVal(), 2);
         assertTrue(listNode.getNext().getNext() == null);
     }
 
@@ -91,7 +91,7 @@ public class AddTwoNumbersBaseTest {
         ListNode current = node;
         for (Integer value : list) {
             assertNotNull(current);
-            assertEquals((int) value, node.getValue());
+            assertEquals((int) value, node.getVal());
             node = node.getNext();
         }
         assertNull(node);

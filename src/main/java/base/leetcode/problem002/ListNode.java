@@ -5,10 +5,16 @@ import java.util.List;
 public class ListNode {
 
     public ListNode next;
-    public int value;
+    public int val;
 
     public ListNode(ListNode next, int value) {
-        this.value = value;
+        this.val = value;
+        this.next = next;
+    }
+
+    public ListNode(int value, ListNode next) {
+        this.val = value;
+        this.next = next;
     }
 
     public static ListNode createFromList(List<Integer> values) {
@@ -30,11 +36,11 @@ public class ListNode {
         this.next = next;
     }
 
-    public int getValue() {
-        return value;
+    public int getVal() {
+        return val;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public void setVal(int val) {
+        this.val = val;
     }
 }

@@ -11,7 +11,7 @@ public class PartitionList {
         ListNode upper = upperHead;
         ListNode current = head;
         while (current != null) {
-            if (current.getValue() < x) {
+            if (current.getVal() < x) {
                 lower.setNext(current);
                 lower = current;
             } else {

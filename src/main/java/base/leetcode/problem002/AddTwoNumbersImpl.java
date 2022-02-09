@@ -10,8 +10,8 @@ public class AddTwoNumbersImpl implements AddTwoNumbers {
         int carry = 0;
         while (l1 != null || l2 != null) {
             int sum = carry;
-            sum += (l1 != null ? l1.getValue() : 0);
-            sum += (l2 != null ? l2.getValue() : 0);
+            sum += (l1 != null ? l1.getVal() : 0);
+            sum += (l2 != null ? l2.getVal() : 0);
             ListNode newNode = new ListNode(null, sum % 10);
             carry = sum / 10;
             current.setNext(newNode);
